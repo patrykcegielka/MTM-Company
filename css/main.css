@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+/*Nawigacja*/
+nav {
+	height: 60px;
+	line-height: 60px;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+}
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	background: none;
+	border: none;
+	padding: 13px 30px;
+	font-size: 30px;
+	cursor: pointer;
+}
+.nav-item {
+	display: none;
+}
+/*Header*/
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-item {
+		display: block;
+	}
+}
+.nav-item a {
+	padding: 0 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #133370;
+	transform: scale(1);
+	transition: 0.2s;
+	display: inline-flex;
+}
+.nav-item a:hover {
+	color: #d48114;
+	transform: scale(1.5);
+	transition: 0.2s;
+}
+
+.header {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/mtm-android.jpg');
+}
+.mtm-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(13, 33, 70, 0.767);
+}
+
+.mtm-text {
+	position: absolute;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.mtm-text h1{
+	margin-bottom: 10px;
+	text-shadow: 3px 3px 5px #133370;
+}
+.mtm-text span{
+	color: #d48114;
+	
+}
